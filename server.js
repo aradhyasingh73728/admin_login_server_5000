@@ -19,8 +19,13 @@ app.set("trust proxy", 1);
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
+
+  // Old admin panels
   "https://bgmi-admin-panel-9eei.onrender.com",
   "https://free-fire-admin-panel.onrender.com",
+
+  // New Cloudflare admin panel
+  "https://bgmi-admin-panel.aradhyasingh-73728.workers.dev",
 ];
 
 const corsOptions = {
