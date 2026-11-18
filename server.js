@@ -8,6 +8,17 @@ import { randomUUID } from "crypto";
 
 dotenv.config();
 
+import crypto from "crypto";
+
+console.log("ADMIN JWT CHECK:", {
+  length: process.env.JWT_SECRET?.length,
+  fingerprint: crypto
+    .createHash("sha256")
+    .update(process.env.JWT_SECRET || "")
+    .digest("hex")
+    .slice(0, 10),
+});
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
