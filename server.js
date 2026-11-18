@@ -116,6 +116,7 @@ app.set("trust proxy", 1);
 // CORS CONFIGURATION
 // ============================================================
 
+
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:5173",
@@ -124,6 +125,8 @@ const allowedOrigins = [
   "https://free-fire-admin-panel.onrender.com",
 
   "https://bgmi-admin-panel.aradhyasingh-73728.workers.dev",
+
+  "https://bgmi-admin-panel.tournament-esports.workers.dev"
 ];
 
 const corsOptions = {
